@@ -22,15 +22,7 @@ header img{
     filter: opacity(1) drop-shadow(0 0 0 white); 
 }
 main{
-    background-image: url('../assets/image/Cover.png');
-    object-fit: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 93vh;
-    background-position-x:center;
-    background-position-y:center;
-    display: flex;
-    flex-direction: column;
 }
 .main-head{
     display: flex;
@@ -44,42 +36,12 @@ main{
     margin-left: 23px;
 }
 .main-head a{
-    color: white;
+    color: #23282d;
     font-size: 1.8rem;
     font-weight: 400;
     margin-right: 23px;
     text-decoration: none;
     border-bottom: 1.5px solid;
-}
-.main-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.main-body h1{
-    color: white;
-    text-align: center;
-    font-size: 3.8rem;
-    font-weight: 500;
-    line-height: 4.4rem;
-    margin-bottom: 30px;
-}
-.main-body .btn-acceso{
-    border-radius: 2px;
-    height: 50px;
-    width: 130px;
-    padding-top: 13px;
-    color: #23282d;
-    border: none;
-    font-size: 1.8rem;
-    font-weight: bold;
-    background-color: #61f2f5;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
 }
 @media (min-width:600px) {
     header{
@@ -93,18 +55,8 @@ main{
         font-size: 2.4rem;
         margin-right: 40px;
     }
-    .main-body h1{
-        font-size: 3.5rem;
-        line-height: 4.4rem;
-        max-width: 500px;
-    }
 }
 @media (min-width:900px) {
-    .main-body h1{
-        font-size: 6rem;
-        line-height: 6.4rem;
-        max-width: 800px;
-    }
     .main-head img{
         margin-right: 70px;
     }

@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    background-color: #61f2f5;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    width: 35px;
+    height: 35px;
+    margin-right: 25px;
+    filter: opacity(1) drop-shadow(0 0 0 white); 
+}
+main{
+    width: 100%;
+}
+.main-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.main-head img{
+    width: 170px;
+    margin-left: 23px;
+}
+.main-head a{
+    color: #23282d;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-right: 23px;
+    text-decoration: none;
+    border-bottom: 1.5px solid;
+}
+
+/*Estilos del blog*/
+article{
+    margin-top: 20px;
+    background-color: #e6e9ed;
+}
+.contenedor-noticias{
+    
+}
+.contenedor-noticias .img-title{
+    width: 100%;
+    padding: 10px 20px;
+}
+.contenedor-noticias .img-title img{
+    width: 100%;
+}
+.contenedor-noticias .img-title p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.contenedor-noticias .description-title{
+    padding: 0 25px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+.description-title h1{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    margin-bottom: 10px;
+}
+.description-title p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.description-title .btn-read-plus{
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #61f2f5;
+    font-weight: 500;
+}
+
+@media (min-width:600px) {
+    header{
+        justify-content: flex-end;
+    }
+    .main-head img{
+        width: 250px;
+        margin-left: 40px;
+    }
+    .main-head a{
+        font-size: 2.4rem;
+        margin-right: 40px;
+    }
+
+    .contenedor-noticias{
+        display: flex;
+        align-items: center;
+    }
+    .contenedor-noticias .img-title{
+        width: 600px;
+    }
+    .contenedor-noticias .description-title{
+        margin-top: 10px;
+        width: 500px;
+    }
+
+}
+@media (min-width:900px) {
+    .main-head img{
+        margin-right: 70px;
+    }
+    .main-head a{
+        margin-left: 70px;
+    }
+    .contenedor-noticias .img-title{
+        width: 1200px;
+    }
+    .contenedor-noticias .description-title{
+        margin-top: 10px;
+        width: 500px;
+    }
+}
