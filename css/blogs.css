@@ -45,12 +45,9 @@ main{
 }
 
 /*Estilos del blog*/
-article{
+.contenedor-noticias{
     margin-top: 20px;
     background-color: #e6e9ed;
-}
-.contenedor-noticias{
-    
 }
 .contenedor-noticias .img-title{
     width: 100%;
@@ -79,38 +76,101 @@ article{
     font-size: 1.4rem;
     font-weight: 400;
 }
-.description-title .btn-read-plus{
+.btn-read-plus{
     margin-top: 15px;
     width: 120px;
     height: 40px;
     border: 2px solid #61f2f5;
     font-weight: 500;
+    background-color: transparent;
+    
 }
-
+.cards{
+    margin: 10px;
+}
+.contenedor-blogposts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-blogposts .contenedor-title{
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 40px 20px 10px 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #e6e9ed;
+}
+.card-blogposts{
+    margin: 40px 20px 10px 20px;
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    grid-auto-rows: 1fr;
+}
+.card-blog{
+    box-shadow: 0px 0px 13px 2px #000000;
+}
+.card-blog img{
+    width: 100%;
+    
+}
+.card-blog h3{
+    font-size: 1.8rem;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.card-blog p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0 10px;
+}
+footer .secundary-footer{
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+    background-color: #61f2f5;
+}
+footer .primary-footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-size: 1.4rem;
+    text-align: center;
+}
 @media (min-width:600px) {
     header{
         justify-content: flex-end;
     }
     .main-head img{
-        width: 250px;
+        width: 150px;
         margin-left: 40px;
     }
     .main-head a{
         font-size: 2.4rem;
-        margin-right: 40px;
+        margin-right: 25px;
     }
 
-    .contenedor-noticias{
+    .contenedor-noticias_body{
         display: flex;
         align-items: center;
     }
     .contenedor-noticias .img-title{
-        width: 600px;
+        max-width: 750px;
     }
     .contenedor-noticias .description-title{
         margin-top: 10px;
-        width: 500px;
+        width: 300px;
     }
+    .card-blogposts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
 }
 @media (min-width:900px) {
@@ -120,11 +180,18 @@ article{
     .main-head a{
         margin-left: 70px;
     }
-    .contenedor-noticias .img-title{
-        width: 1200px;
+    .contenedor-noticias{
+        display: flex;
+        justify-content: center;
     }
-    .contenedor-noticias .description-title{
-        margin-top: 10px;
-        width: 500px;
+    .contenedor-noticias_body{
+        max-width: 1200px;
     }
+    .card-blogposts{
+        max-width: 1050px;
+    }
+    .card-blogposts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
