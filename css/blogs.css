@@ -94,10 +94,14 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.contenedor-blogposts .contenedor-title{
+.contenedor-title{
     width: 100%;
-    padding-bottom: 20px;
     margin: 40px 20px 10px 20px;
+    max-width: 1090px;
+}
+.contenedor-title .title{
+    padding-bottom: 20px;
+    margin: 0 20px;
     text-align: center;
     font-size: 1.6rem;
     border-bottom: 2px solid #e6e9ed;

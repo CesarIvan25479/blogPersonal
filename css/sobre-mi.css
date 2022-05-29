@@ -5,7 +5,7 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 header{
     background-color: #61f2f5;
@@ -48,12 +48,12 @@ main{
         justify-content: flex-end;
     }
     .main-head img{
-        width: 250px;
+        width: 150px;
         margin-left: 40px;
     }
     .main-head a{
         font-size: 2.4rem;
-        margin-right: 40px;
+        margin-right: 25px;
     }
 }
 @media (min-width:900px) {
@@ -63,4 +63,5 @@ main{
     .main-head a{
         margin-left: 70px;
     }
+
 }
