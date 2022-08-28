@@ -8,7 +8,7 @@ html{
     font-family: 'Roboto Mono', monospace;
 }
 header{
-    background-color: #61f2f5;
+    background-color: #000;
     width: 100%;
     height: 60px;
     display: flex;
@@ -83,6 +83,7 @@ main{
     border: 2px solid #61f2f5;
     font-weight: 500;
     background-color: transparent;
+    cursor: pointer;
     
 }
 .cards{
@@ -134,7 +135,7 @@ footer .secundary-footer{
     width: 100%;
     height: 30px;
     margin-top: 50px;
-    background-color: #61f2f5;
+    background-color: #5e5959;
 }
 footer .primary-footer{
     width: 100%;
